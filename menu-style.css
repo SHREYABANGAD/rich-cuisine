@@ -1,0 +1,33 @@
+.all-recipes{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(88, 50, 50);
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 99vw;
+    padding-top: 30px;
+    text-align: center;     
+    color: white;
+  }
+.all-recipes h1{
+    font-size: 45px;
+    
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif; 
+      }
+.all-recipes p{
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Instrument Serif', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+  }
+
+.top{
+    text-align: center;
+        font-size: 30px;
+
+  }

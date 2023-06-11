@@ -1,0 +1,314 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  justify-content: start;
+  background-color:rgb(222, 226, 229);
+  width: 85vw;
+  height: 500px;
+  border-radius: 30px;
+}
+
+.recipe-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 450px;
+  padding: 0 20px;
+  
+}
+
+#recipe-title{
+  margin: 30px 0;
+  background-color:  rgb(66, 31, 31);
+  
+  
+ 
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+font-family: 'Cormorant Garamond', serif;
+}
+
+.recipe-container h1{
+  
+  justify-content: center;
+  background-color: rgb(73, 65, 79);
+  color: white;
+}
+.recipe-container img{
+  margin-right: 20px;
+  border-radius: 10px;
+  height: auto;
+  width: 350px;
+}
+
+.recipe-container p{
+  font-size: 27px;
+  font-family: 'Castoro Titling', cursive;
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+.recipe-box{
+  display: flex;
+  padding-right: 30px;
+  
+}
+.recipe-intro{
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 90vw;
+  height: 500px;
+  text-align: center;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+ 
+}
+
+.recipe-something{
+ 
+  margin-left: 20px;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.recipe-info.time{
+  display: flex;
+  
+  background-color: aqua;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+    height: 50px;
+    font-size: 50px;
+}
+
+.recipe-box{
+  display: flex;
+  flex-direction: row;   
+  width:80vw;
+  height: 350px;  
+  font-size: 19px;
+  
+}
+ h2{  
+  text-align: center;
+  font-family: 'Castoro Titling', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Lora', serif;  
+}
+
+.recipe-instruction{
+  display: flex;
+  flex-direction: column;  
+  padding-left: 200px;
+  text-align:left;
+}
+
+.recipe-instruction ol{
+  font-size: 20px;
+}
+
+.container{
+  display: flex;
+  width: 100vw;
+  background-color:rgb(70, 38, 38);
+  align-items: center;
+  justify-content: space-between;
+  font-family:'Times New Roman', Times, serif;
+ 
+}
+
+.container h1{
+  color: rgb(255, 255, 255);
+  margin-left: 40px;
+  font-weight: bold;
+   font-family:serif;
+
+}
+.navbar{
+  display:flex;
+ padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navbar ul li::after{
+  content:'';
+  width: 0%;
+  height:2px;
+  background: rgb(120, 96, 76);
+  display:block;
+  margin: auto;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.navbar ul li a{
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.navbar .register{
+  padding: 8px;
+  
+}
+
+@media(max-width: 700px){
+  .content h3{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin: auto;
+  }
+  .content p{
+      text-align: center;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 5px;
+  }
+  .navbar ul li{
+      display: block;
+      
+  }
+  .navbar{
+      position: absolute;
+      background-color: rgb(120, 96, 76);
+      height: 100vh;
+      width: 200px;
+      top:0;
+      right: 0;
+      text-align: right;
+      z-index: 2;
+
+  }
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 50px;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 400px;
+  background-color: rgb(241, 237, 237);
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.footer .section{
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 250px;
+  color: rgba(0, 0, 0, 0.71);
+}
+
+.footer .section h1{
+  margin-bottom: 20px;
+}
+
+.footer .section h3{
+  margin-bottom: 10px;
+}
+
+.footer .feedback{
+  margin-top: 25px;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  color:rgba(56, 33, 47, 0.9);
+}
+
+.footer .feedback-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.feedback-box .feedback-button{
+  background-color: rgba(0, 0, 0, 0.71);
+  height: 35px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feedback-box .feedback-input{
+  height: 80px;
+  width: 420px;
+  margin: 10px 0;
+}
+
+.footer .form-box{
+  height: 150px;
+  width: 400px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-box .logos{
+  font-size: 40px;
+  margin: 0px 10px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.71);
+  text-align: left
+
+}
+.form-box h1{
+  text-align: left;
+  margin: 15px 0;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.71);
+}
+
+.form-box p{
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.71);
+  font-size: 15px;
+}

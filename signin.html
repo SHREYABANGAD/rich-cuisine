@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.7) url('bangad.jfif') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #553031;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #5e3330;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  
+  background-color: white;
+  margin-left: 800px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.h2
+{
+    text-align: center;
+}
+.registerbtn {
+  background-color: #4d2b2b;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+
+
+<form id="SIGNIN" name="signinForm" method="post" action="mainpage.html">
+  
+  <div class="container">
+    <h2>SIGNIN</h2>
+    <a href="mainpage.html" style="margin-left: 95%; text-decoration: none; color: black; font-size: 20px;">x</a>
+
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <!-- <button type="submit">Login</button> -->
+    <input type="submit" value="Login" class="registerbtn" name="Submit">
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#ffffff">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+    <p>Don't have an account? <a href="file:///C:/Users/student/Desktop/shreya/REGISTER.html">Register</a>.</p>
+</div>
+</form>
+
+</body>
+
+<script>
+
+var regForm = document.getElementById("SIGNIN");
+  regForm.addEventListener("submit",(event)=>{
+    event.preventDefault();
+
+    if(!SIGNINVALIDATION()){
+      return;
+    }
+    else{
+      regForm.submit();
+      location.href = "mainpage.html"
+    }
+  })
+
+  function SIGNINVALIDATION() {
+      var pass = document.forms.signinForm.psw.value;
+      var name = document.forms.signinForm.uname.value;
+  
+      var regName = /\d+$/g;                // Javascript reGex for Name validation
+  
+      if (name == "" || regName.test(name)) {
+          window.alert("Please enter your name properly.");
+          name.focus();
+          return false;
+      }
+
+      if (pass == "") {
+          alert("Please enter your password");
+          pass.focus();
+          return false;
+      }
+  
+      if(pass.length <6){
+          alert("Password should be atleast 6 character long");
+          pass.focus();
+          return false;
+  
+      }
+       
+      
+     
+      return true;
+  }
+
+
+</script>
+
+</html>

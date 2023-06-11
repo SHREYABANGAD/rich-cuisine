@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/1e70656587.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="main">
+        
+    <div class="container">
+        <h1>Rich Cuisine</h1>
+        <div id="NAVBAR" class="navbar navbar-bars">
+
+            <i id="navbar-cross" class="fa fa-times" aria-hidden="true"></i>
+
+            <ul>
+                <li><a href="mainpage.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li> 
+                 <li><a class="register" href="REGISTER.html">REGISTER</a></li>
+            </ul>
+
+        </div>
+        <i id="navbar-bars" class="fa fa-bars" aria-hidden="true"></i>
+
+    </div>
+    <div class="content">
+        <h3>WELCOME TO RICH CUISINE</h3>
+        <hr><br>
+        <p>Simple Recipes Made For Real, Actual, Everyday Life</p>
+    </div>
+</section>
+
+<section class="recipes-show">
+    <div class="recipes-show-text">
+        <h4>FIND YOUR FAVOURITE RECIPES</h4>
+        <p>We provide a variety of recipes with high taste from famous chefs</p>
+    </div>
+
+    <div class="recipes-show-images">
+        <img class="recp-img" src="recp1.png" alt="1" style="height: 220px;">
+        <img class="recp-img" src="recp3.png" alt="2" style="height: 210px;">
+        <img class="recp-img" src="recp2.png" alt="3" style="height: 220px;">
+        <img class="recp-img" src="recp4.png" alt="4" style="height: 210px;">
+    </div>
+
+    <div class="recipes-show-images">
+        <img class="recp-img" src="recp5.png" alt="1" style="height: 220px;">
+        <img class="recp-img" src="recp7.png" alt="2" style="height: 235px;">
+        <img class="recp-img" src="recp6.png" alt="2" style="height: 220px;">
+    </div>
+
+</section>
+
+<!-------------recipes we have-->
+   
+
+
+<section class="recipes">
+    <h4>RECIPES WE HAVE</h4>
+   
+    <div class="box-container">
+        
+        <div class="box box1" >
+            <div class="button">
+                <h1>VEGETARIAN</h1>
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="button">
+                <h1>MEDITERRANEAN</h1>
+            </div>
+        </div>
+        <div class="box box3">
+            <div class="button">
+                <h1>VEGAN</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box-container">
+        
+        <div id="keto-page" class="box box4" >
+            <div class="button">
+                <h1>KETO</h1>
+            </div>
+        </div>
+        <div id="salads-page" class="box box5">
+            <div class="button">
+                <h1>SALADS</h1>
+            </div>
+        </div>
+        <div class="box box6 ">
+            <div class="button">
+                <h1>HEALTHY</h1>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<section>
+    <div class="footer">
+        <div class="section">
+            <h1>Rich Cuisine</h1>
+            <hr><br> 
+            <h3>About</h3>
+            <h3>Recipe Index</h3>
+            <h3>Blog</h3>
+            <h3>Blogging Resources</h3>
+            <h3>Income Reports</h3> 
+            <h3>Sponsored Content</h3>
+            <h3>Media Mentions</h3>
+            <h3>Contact</h3>
+        </div>
+
+        <div class="section">
+            <h1>Food & Recipes</h1>     
+            <hr><br>   
+            <h3>Taco Recipes</h3>    
+            <h3>Meal Prep Recipes</h3>  
+            <h3>Freezer Meals 101</h3>
+            <h3>Quick and Easy Recipes</h3>
+            <h3>Instant Pot Recipes</h3>
+            <h3>Pasta Recipes</h3>
+            <h3>Vegan Recipes</h3>
+            <h3>Soup Recipes</h3> 
+        </div>
+
+        <div class="feedback">
+            <h1>Feedback</h1>
+
+            <div class="feedback-box">
+                <input class="feedback-input" type="text" name="bangbang" id="">
+                <h2 class="feedback-button">Send</h2>
+            </div>
+
+            <div class="form-box">
+                <h1>Rich Cuisine</h1>
+                <div class="logo-box">
+                    <i class="fa-brands fa-instagram logos"></i>
+                    <i class="fa-brands fa-facebook logos"></i>
+                    <i class="fa-brands fa-pinterest logos"></i>
+                    <i class="fa-brands fa-twitter logos"></i>
+                </div>
+                <p>© 2023 Rich Cuisine. All Rights Reserved.</p>
+            
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script>
+
+     var saladsPage = document.getElementById("salads-page")
+     saladsPage.addEventListener("click",function(){
+        window.open("SALADS.html")
+     })
+     var saladsPage = document.getElementById("salads-page")
+     saladsPage.addEventListener("click",function(){
+        window.open("Meditirranean.HTML")
+     })
+     var saladsPage = document.getElementById("salads-page")
+     saladsPage.addEventListener("click",function(){
+        window.open("VEGAN.HTML")
+     })
+
+     var navbar = document.getElementById("NAVBAR")
+
+     var crossButton = document.getElementById("navbar-cross")
+     crossButton.addEventListener("click",function(){
+        navbar.classList.add("navbar-bars")
+        navbar.classList.remove("navbar-cross")
+     })
+
+     var crossButton = document.getElementById("navbar-bars")
+     crossButton.addEventListener("click",function(){
+        navbar.classList.remove("navbar-bars")
+        navbar.classList.add("navbar-cross")
+     })
+</script>
+</html> 

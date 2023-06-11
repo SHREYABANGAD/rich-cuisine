@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background: rgba(73, 54, 54, 0.7) url('bangad.jfif') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 70vh;
+    width: 100vw;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    background-color:rgba(46, 22, 22, 0.817);
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Times New Roman', Times, serif;
+    width: 100vw;
+    height: 50px;
+}
+
+.container h1{
+    color: rgb(255, 255, 255);
+    margin-left: 40px;
+    font-weight: bold;
+    font-family:serif;
+    font-size: 25px;
+
+}
+.navbar{
+    display:flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.navbar ul li::after{
+    content:'';
+    width: 0%;
+    height:2px;
+    background: rgb(120, 96, 76);
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar .register{
+    padding: 8px;
+    
+}
+
+.content{
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    left: 26%;
+}
+
+.content h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin: auto;
+}
+
+
+.content p{
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.container .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .container .fa{
+        display: block;
+    }
+
+    #navbar-cross{
+        position: relative;
+        bottom: 50%;
+        color: white;
+        padding: 5px;
+    }
+
+    #navbar-bars{
+        font-size: 30px;
+        position: absolute;
+        right: 0;
+        padding: 10px;
+        color: white;
+    }
+    
+    .content h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin: auto;
+    }
+    .content p{
+        text-align: center;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5px;
+    }
+    .navbar ul li{
+        display: block;
+        
+    }
+    .navbar{
+        position: absolute;
+        background-color: rgb(120, 96, 76);
+        height: 69vh;
+        width: 200px;
+        top:0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: all 500ms;
+    }
+
+    .navbar-bars{
+        right: -60%;
+    }
+
+    .navbar-cross{
+        right: 0;
+    }
+    
+    
+}
+    /*-------------recipes-----------*/
+.recipes{
+    width: 100vw;
+    text-align: center;
+    padding-top: 34px;
+    
+}
+.recipes h4{
+    font-size: 50px;
+    width: 100%;  
+    margin-left:6px;
+    padding-bottom: 29px;
+    padding-top: 29px;    
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Playfair Display', serif;  
+    color:rgba(56, 33, 47, 0.9);
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 40px;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+.box1{
+    background-image: url(veg2.jpg);
+    content: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1{
+    color: white;
+}
+
+.box .button{
+    height: 40px;
+    width: auto;
+    background-color: rgba(56, 33, 47, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: rgb(249, 249, 249);
+    position: relative;
+    top: 160px;
+}
+
+.box1:hover{
+    background: rgba(73, 54, 54, 0.7) url(veg2.jpg);
+    background-blend-mode: darken;
+    
+}
+
+
+
+.box2{
+    background-image: url(nonveg.jpg);
+    content: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2:hover{
+    background: rgba(73, 54, 54, 0.7) url(nonveg.jpg);
+    background-blend-mode: darken;
+}
+.box3{
+    background-image: url(vegan.jpg);
+    content: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3:hover{
+    background: rgba(73, 54, 54, 0.7) url(vegan.jpg);
+    background-blend-mode: darken;
+}
+.box4{
+    background-image: url(keto.jpg);
+    content: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box4:hover{
+    background: rgba(73, 54, 54, 0.7) url(keto.jpg);
+    background-blend-mode: darken;
+}
+.box5{
+    background-image: url(salads.jpg);
+    content: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box5:hover{
+    background: rgba(73, 54, 54, 0.7) url(salads.jpg);
+    background-blend-mode: darken;
+}
+.box6{
+    background-image: url(healthy.jpg);
+    content: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box6:hover{
+    background: rgba(73, 54, 54, 0.7) url(healthy.jpg);
+    background-blend-mode: darken;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(241, 237, 237);
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.footer .section{
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 250px;
+    color: rgba(0, 0, 0, 0.71);
+}
+
+.footer .section h1{
+    margin-bottom: 20px;
+}
+
+.footer .section h3{
+    margin-bottom: 10px;
+}
+
+.footer .feedback{
+    margin-top: 25px;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    color:rgba(56, 33, 47, 0.9);
+}
+
+.footer .feedback-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.feedback-box .feedback-button{
+    background-color: rgba(0, 0, 0, 0.71);
+    height: 35px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feedback-box .feedback-input{
+    height: 80px;
+    width: 420px;
+    margin: 10px 0;
+}
+
+.footer .form-box{
+    height: 150px;
+    width: 400px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-box .logos{
+    font-size: 40px;
+    margin: 0px 10px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.71);
+    text-align: left
+
+}
+.form-box h1{
+    text-align: left;
+    margin: 15px 0;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.71);
+}
+
+.form-box p{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.71);
+    font-size: 15px;
+}
+
+.recipes-show h4{
+    margin-top: 80px;
+    font-size: 35px;
+    width: 100%;  
+    margin-left:6px;
+    font-family: 'Playfair Display', serif;  
+    color:rgba(56, 33, 47, 0.9);
+}
+
+.recipes-show p{
+    font-size: 20px;
+    width: 100%;  
+    margin-left:6px;   
+    font-family: 'Playfair Display', serif;  
+    color:rgba(56, 33, 47, 0.9);
+    margin-bottom: 70px;
+}
+
+.recipes-show{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.recipes-show .recp-img{
+    margin: 0 20px;
+}
+
+.recp-img{
+    transition: transform 500ms;
+}
+
+.recp-img:hover{
+    transform: rotate(30deg) scale(1.1);
+}
+
+.recipes-show-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
